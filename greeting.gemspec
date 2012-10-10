@@ -6,9 +6,9 @@ require 'greeting/version'
 Gem::Specification.new do |gem|
   gem.name          = "greeting"
   gem.version       = Greeting::VERSION
-  gem.authors       = ["TODO: Write your name"]
-  gem.email         = ["TODO: Write your email address"]
-  gem.description   = %q{TODO: Write a gem description}
+  gem.authors       = ["yoolk application team"]
+  gem.email         = ["support@yoolk.com"]
+  gem.description   = %q{To display greeting message}
   gem.summary       = %q{TODO: Write a gem summary}
   gem.homepage      = ""
 
@@ -16,4 +16,6 @@ Gem::Specification.new do |gem|
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
+  
+  gem.add_development_dependency "rspec" 
 end
